@@ -1,0 +1,11 @@
+<resources>
+  <string name="app_name">My Application</string>
+  <string name="journeys_direct">Direct</string>
+  <string name="journeys_not_direct">Not direct</string>
+  <string name="journey_via">Via %s</string>
+  <string name="journey_sort_filters"><![CDATA[SORT & FILTERS]]></string>
+  <string name="journey_adults">%s adult</string>
+  <string name="journey_results_and_loading">%s results and loading…</string>
+  <string name="journey_results">%s results</string>
+  <string name="journey_loading">Loading...</string>
+</resources>

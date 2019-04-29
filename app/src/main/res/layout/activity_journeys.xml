@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".features.journeys.JourneysActivity">
+
+  <androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:background="@color/colorPrimary"
+    android:elevation="5dp">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center_vertical"
+      android:orientation="horizontal">
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+      <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+          android:id="@+id/tvFromTo"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@android:color/white"
+          android:textSize="20sp"
+          tools:text="BUD - London" />
+
+        <TextView
+          android:id="@+id/tvFilter"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/white_70"
+          android:textSize="12sp"
+          tools:text="12 Nov – 16 Nov, 1 adult, economy" />
+      </LinearLayout>
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_search_black_24dp"
+        />
+
+      <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/ic_more_vert_black_24dp" />
+    </LinearLayout>
+  </androidx.appcompat.widget.Toolbar>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/white"
+    android:elevation="5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/tvResults"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="16dp"
+      android:textColor="@color/dusk"
+      android:textSize="14sp"
+      android:text="@string/journey_loading"
+      tools:text="365 of 365 results" />
+
+    <TextView
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="end"
+      android:padding="16dp"
+      android:text="@string/journey_sort_filters"
+      android:textColor="@color/dark"
+      android:textSize="14sp" />
+  </LinearLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</LinearLayout>
